@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트작성하기</title>
+</head>
+<body>
+        <!-- <a> HTML에서 내부나 외부 링크를 생성-->
+            <!-- href 속성 a 태그로 생성하는 링크의 대상 경로를 입력할 때 사용 (대상경로의 주소이거나 내부 문서의 id 속성값)-->
+                <!-- <a href = "#">  이렇게 작성하면 다른 페이지로 연결 안됨 -->
+            <!-- target 속성 링크를 생성할 때 대상이 연결되는 방식을 지정 (_blank, _ parent, _self, _ top 새창으로 열리는 방식인 _blank를 제외하고 잘 안씀) -->
+            <!-- title 속성 링크를 설명할 수 있는 텍스트를 작성 -->
+
+            <!-- a 태그를 이용하여 도서출판 길벗 홈페이지를 새 창으로 연결하는 링크 -->
+                    <a href = "https://www.gilbut.co.kr" target = "_blank" title = "도서출판 길벗">길벗 홈페이지</a>
+
+        
+        <!-- <img> HTML에서 이미지 객체를 삽입하고 싶을 때 사용-->
+                    <img src = "이미지 경로" alt = "이미지 설명">
+                <!--src 속성 이미지의 경로를 입력  항상 웹브라우저에서 실행되는 HTML 파일의 위치가 기준 (./ 현재폴더  ../ 상위폴더)-->
+                <!-- HTML파일과 같은 폴더에 있는 이미지 폴더에 있을때, HTML파일이 상위폴더에 있을때-->
+                    <img src = "./images/beach.jpg">
+                    <img src = "../imgages/beach.jpg"> <!-- ../../ 도 가능 -->
+                <!-- alt 속성 삽입한 이미지 객체를 설명할 수 있는 텍스르 넣기 -->
+                <img src = "./images/beach.jpg" alt = "아름다운 여름 해변">
+
+        <!-- 이미지 링크 -->
+        <!-- 이미지 클릭시 경로로 이동 -->
+                    <a href="https://www.google.com" target="_blank">
+                        <img src = "./images/beach.jpg" alt = "구글 로고">
+                    </a>
+</body>
+</html>
